@@ -1,6 +1,6 @@
 from base64 import b64encode
 import sys
-sys.path.append("C:\\Users\\kundu\\PycharmProjects\\p\\venv\\Lib\\site-packages")
+#sys.path.append("C:\\Users\\kundu\\PycharmProjects\\p\\venv\\Lib\\site-packages")
 import streamlit as st
 import pandas as pd
 import  numpy as np
@@ -91,8 +91,9 @@ def main():
         preprocessed_df = preprocess_data(df,columns_to_drop,fillna_strategy,columns_to_not_transfrom,scalerchoice,encoderchoice)
 
         # Display preprocessed data
-            st.write("Preprocessed Data")
-            st.dataframe(preprocessed_df)
+        
+        st.write("Preprocessed Data")
+        st.dataframe(preprocessed_df)
 
         # Download preprocessed data
         csv = preprocessed_df.to_csv(index=False)
