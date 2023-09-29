@@ -1,6 +1,6 @@
 from base64 import b64encode
 import sys
-#sys.path.append("C:\\Users\\kundu\\PycharmProjects\\p\\venv\\Lib\\site-packages")
+sys.path.append("C:\\Users\\kundu\\PycharmProjects\\p\\venv\\Lib\\site-packages")
 import streamlit as st
 import pandas as pd
 import  numpy as np
