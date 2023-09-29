@@ -91,7 +91,6 @@ def main():
         preprocessed_df = preprocess_data(df,columns_to_drop,fillna_strategy,columns_to_not_transfrom,scalerchoice,encoderchoice)
 
         # Display preprocessed data
-        with st.chat_message("🧑‍💻"):
             st.write("Preprocessed Data")
             st.dataframe(preprocessed_df)
 
